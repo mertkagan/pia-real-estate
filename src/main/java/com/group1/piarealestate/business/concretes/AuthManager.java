@@ -37,7 +37,7 @@ public class AuthManager implements AuthService {
             return "Girilen E-mail zaten kayıtlı. ";
         }
         if (existingUserByPhoneNumber != null) {
-            return "Girilen kullanıcı adı zaten kayıtlı. ";
+            return "Girilen Telefon Numarası Zaten Kayıtlı adı zaten kayıtlı. ";
         }
         if(bindingResult.hasErrors()){
             if (bindingResult.hasFieldErrors("email")) {
@@ -106,4 +106,5 @@ public class AuthManager implements AuthService {
             return userLoginResponse;
         }
     }
+
 }
