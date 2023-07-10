@@ -34,10 +34,10 @@ public class AuthManager implements AuthService {
 
 
         if (existingUserByEmail != null) {
-            return "Girilen E-mail zaten kayıtlı. ";
+            return "Girilen e-mail zaten kayıtlı! ";
         }
         if (existingUserByPhoneNumber != null) {
-            return "Girilen Telefon Numarası Zaten Kayıtlı adı zaten kayıtlı. ";
+            return "Girilen telefon numarası zaten kayıtlı! ";
         }
         if(bindingResult.hasErrors()){
             if (bindingResult.hasFieldErrors("email")) {
